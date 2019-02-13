@@ -1,7 +1,2 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
-
-// You can delete this file if you're not using it
+// Normalize CSS - https://github.com/necolas/normalize.css/
+import 'normalize.css';
