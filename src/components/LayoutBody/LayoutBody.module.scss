@@ -1,0 +1,9 @@
+.layout {
+  /* Grid - 12x24 */
+  display: grid;
+  grid-auto-columns: calc(100vw / 12);
+  grid-auto-rows: calc((100vh - 80px) / 24);
+  grid-gap: 0;
+  /* Remove scroll bar during animation */
+  overflow: hidden;
+}
