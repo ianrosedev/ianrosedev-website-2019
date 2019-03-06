@@ -1,6 +1,9 @@
-.grid {
+@import '../../styles/_fonts.scss';
+
+.layout {
   display: grid;
   grid-gap: 0;
   grid-template-rows: 80px, 1fr;
   overflow: hidden;
+  font-family: $fontStack;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../Header/Header';
-import styles from './Layout.module.css';
+import styles from './Layout.module.scss';
 
 const Layout = ({ children }) => (
-  <div className={styles.grid}>
+  <div className={styles.layout}>
     <Header />
     {children}
   </div>
