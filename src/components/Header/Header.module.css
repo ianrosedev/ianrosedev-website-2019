@@ -1,0 +1,43 @@
+.header {
+  display: grid;
+  grid-gap: 0;
+  grid-auto-columns: calc(100vw / 12);
+  background-color: red;
+}
+
+.logo {
+  height: 60px;
+  margin: 10px 0;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.nav {
+  font-size: 24px;
+  font-weight: bold;
+  grid-column: 8 / 13;
+  grid-row: 1 / 2;
+}
+
+.nav > ul {
+  padding-inline-start: 0;
+}
+
+.nav li {
+  border-style: solid;
+  border-width: 0 0 0 3px;
+  padding: 0 0 0 3px;
+  margin-right: 20px;
+  color: black;
+  display: inline;
+  list-style-type: none;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  border-left-color: white;
+}
