@@ -1,0 +1,12 @@
+.footer {
+  grid-column: 1 / 2;
+  grid-row: 18 / auto;
+}
+
+.notice {
+  writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  color: white;
+  margin-left: 10px;
+}

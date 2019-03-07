@@ -1,0 +1,124 @@
+@import '../../styles/_colors.scss';
+
+.backgroundBlockLeft {
+  grid-column: 1 / 4;
+  grid-row: 1 / 25;
+  background-color: black;
+}
+
+.backgroundBlockRight {
+  grid-column: 10 / 13;
+  grid-row: 1 / 25;
+  background-color: $backgroundGrayLight;
+}
+
+.photo {
+  grid-column: 2 / 6;
+  grid-row: 2 / 22;
+  animation: photo 2s linear;
+  background-image: url('../../images/ian-on-bench-cropped.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: grayscale(100%);
+
+  @keyframes photo {
+    from {
+      transform: translateX(-1000px);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+}
+
+.intro {
+  grid-column: 7 / 13;
+  grid-row: 2 / auto;
+  /* 2/19 - `fit-content` only works in Chrome */
+  /* Be sure to have fallback and test on other browsers */
+  height: 160px;
+  height: fit-content;
+  background-color: white;
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+  animation: intro 2s linear;
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 100;
+  }
+
+  @keyframes intro {
+    from {
+      transform: translateX(800px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+.skills {
+  grid-column: 8 / 13;
+  grid-row: 11 / auto;
+  /* 2/19 - `fit-content` only works in Chrome */
+  /* Be sure to have fallback and test on other browsers */
+  height: 300px;
+  height: fit-content;
+  background-color: white;
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+  animation: skills 2.5s linear;
+
+  h1 {
+    font-size: 32px;
+  }
+
+  ul {
+    margin-left: -40px;
+    font-size: 24px;
+    font-weight: 100;
+  }
+
+  @keyframes skills {
+    from {
+      transform: translateX(800px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .intro {
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      font-size: 32px;
+      font-weight: 100;
+    }
+  }
+
+  .skills {
+    h1 {
+      font-size: 42px;
+    }
+
+    ul {
+      font-size: 32px;
+      font-weight: 100;
+    }
+  }
+}
