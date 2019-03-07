@@ -4,8 +4,8 @@ import styles from './Homepage.module.scss';
 
 const Homepage = () => (
   <LayoutBody>
-    <div className={styles.grayBlockLeft} aria-hidden='true' />
-    <div className={styles.grayBlockRight} aria-hidden='true' />
+    <div className={styles.backgroundBlockLeft} aria-hidden='true' />
+    <div className={styles.backgroundBlockRight} aria-hidden='true' />
     <div className={styles.photo} role='img' aria-label='Ian on bench' />
     <div className={styles.intro}>
       <h1>Hi, My name is Ian.</h1>
