@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import styles from './Header.module.scss';
 
 const Header = () => (
@@ -34,20 +35,30 @@ const Header = () => (
     </svg>
     <nav className={styles.nav}>
       <ul>
-        <li className={styles.active}>
-          <a href='/'>Home</a>
+        <li>
+          <Link to='/' activeClassName={styles.active}>
+            Home
+          </Link>
         </li>
         <li>
-          <a href='/'>Blog</a>
+          <Link to='/blog' activeClassName={styles.active}>
+            Blog
+          </Link>
         </li>
         <li>
-          <a href='/'>Code</a>
+          <Link to='/code' activeClassName={styles.active}>
+            Code
+          </Link>
         </li>
         <li>
-          <a href='/'>About</a>
+          <Link to='/about' activeClassName={styles.active}>
+            About
+          </Link>
         </li>
         <li>
-          <a href='/'>Contact</a>
+          <Link to='/contact' activeClassName={styles.active}>
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>
