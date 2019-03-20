@@ -1,8 +1,8 @@
 import React from 'react';
 import LayoutBody from '../LayoutBody/LayoutBody';
-import styles from './Homepage.module.scss';
+import styles from './Home.module.scss';
 
-const Homepage = () => (
+const Home = () => (
   <LayoutBody>
     <div className={styles.backgroundBlockLeft} aria-hidden='true' />
     <div className={styles.backgroundBlockRight} aria-hidden='true' />
@@ -30,4 +30,4 @@ const Homepage = () => (
   </LayoutBody>
 );
 
-export default Homepage;
+export default Home;

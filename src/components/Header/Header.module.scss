@@ -2,8 +2,8 @@
 
 .header {
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 0;
-  grid-auto-columns: calc(100vw / 12);
   background-color: $primaryColor;
 }
 

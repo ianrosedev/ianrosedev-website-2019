@@ -1,12 +1,12 @@
 import React from 'react';
 import LayoutMain from '../components/LayoutMain/LayoutMain';
-import Homepage from '../components/Homepage/Homepage';
+import Home from '../components/Home/Home';
 import SEO from '../components/SEO/SEO';
 
 const IndexPage = () => (
   <LayoutMain>
     <SEO title='Web Developer' />
-    <Homepage />
+    <Home />
   </LayoutMain>
 );
 

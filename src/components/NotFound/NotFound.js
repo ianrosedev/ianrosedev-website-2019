@@ -3,8 +3,12 @@ import styles from './NotFound.module.scss';
 
 const NotFound = () => (
   <div className={styles.notFound}>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <iframe
+      title='WHAM - Everything She Wants'
+      src='https://www.youtube.com/embed/Yf_Lwe6p-Cg?controls=0'
+      frameBorder='0'
+      allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+    />
   </div>
 );
 
