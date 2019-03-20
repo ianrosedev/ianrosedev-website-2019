@@ -1,0 +1,64 @@
+/* Grid - 12x46 */
+@import '../../styles/_colors.scss';
+
+.backgroundBlockLeft {
+  grid-column: 1 / 46;
+  grid-row: 1 / 15;
+  transform: rotate(-45deg);
+  z-index: -9999;
+  margin-left: -900px;
+  background-color: black;
+}
+
+.backgroundBlockRight {
+  grid-column: 1 / 46;
+  grid-row: 1 / 25;
+  transform: rotate(-45deg);
+  z-index: -9999;
+  padding: 0 1000px;
+  background-color: $backgroundGrayLight;
+}
+
+.projects {
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+  .text {
+    margin-left: 40px;
+    width: 600px;
+  }
+
+  .img {
+    overflow: hidden;
+  }
+}
+
+.p1 {
+  grid-column: 1 / 12;
+  grid-row: 2 / 12;
+}
+
+.p2 {
+  grid-column: 1 / 12;
+  grid-row: 13 / 23;
+}
+
+.p3 {
+  grid-column: 1 / 12;
+  grid-row: 24 / 34;
+}
+
+.p4 {
+  grid-column: 1 / 12;
+  grid-row: 35 / 45;
+}
+
+.emptyRow {
+  grid-column: 1 / 13;
+  grid-row: 45 / 46;
+}
