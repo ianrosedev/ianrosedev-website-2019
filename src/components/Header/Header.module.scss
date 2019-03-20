@@ -2,7 +2,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, calc(100vw / 12));
   grid-gap: 0;
   background-color: $primaryColor;
 }

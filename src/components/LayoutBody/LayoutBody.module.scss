@@ -1,8 +1,14 @@
 .layout {
-  /* Grid - 12x24 */
+  /* Grid - 12x24 - flexes to fit screen */
   /* If you go over 24 rows it will add more as needed */
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: calc((100vh - 100px) / 24);
+  grid-template-columns: repeat(12, calc(100vw / 12));
+  grid-auto-rows: calc((100vh - 80px) / 24);
   grid-gap: 0px;
+}
+
+@media screen and (min-width: 1300px) {
+  .layout {
+    grid-auto-rows: calc((100vh - 100px) / 24);
+  }
 }
