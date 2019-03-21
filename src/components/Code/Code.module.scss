@@ -1,9 +1,10 @@
 /* Grid - 12x46 */
 @import '../../styles/_colors.scss';
+@import '../../styles/_sizes.scss';
 
 .backgroundBlockLeft {
-  grid-column: 1 / 46;
-  grid-row: 1 / 15;
+  grid-column: 1 / 6;
+  grid-row: 1 / 46;
   transform: rotate(-45deg);
   z-index: -9999;
   margin-left: -900px;
@@ -11,26 +12,48 @@
 }
 
 .backgroundBlockRight {
-  grid-column: 1 / 46;
-  grid-row: 1 / 25;
+  grid-column: 3 / 11;
+  grid-row: 1 / 46;
   transform: rotate(-45deg);
   z-index: -9999;
-  padding: 0 1000px;
+  padding: 0 600px;
   background-color: $backgroundGrayLight;
 }
 
-.projects {
+.emptyRow {
+  grid-column: 1 / 13;
+  grid-row: 45 / 46;
+}
+
+.examples {
   border-style: solid;
   border-width: 10px 0;
   border-top-color: black;
   border-bottom-color: $primaryColor;
   background-color: white;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
 
   .text {
-    margin-left: 40px;
-    width: 600px;
+    margin-left: calc(100vw / 12);
+    max-width: 600px;
+
+    p {
+      margin-bottom: 0.5em;
+    }
+
+    .icon {
+      width: 0.5em;
+      height: 0.5em;
+      margin-right: 0.3em;
+      color: red;
+    }
+
+    .iconDisabled {
+      color: black;
+      cursor: not-allowed;
+    }
   }
 
   .img {
@@ -38,27 +61,47 @@
   }
 }
 
-.p1 {
+.example1 {
   grid-column: 1 / 12;
   grid-row: 2 / 12;
 }
 
-.p2 {
+.example2 {
   grid-column: 1 / 12;
   grid-row: 13 / 23;
 }
 
-.p3 {
+.example3 {
   grid-column: 1 / 12;
   grid-row: 24 / 34;
 }
 
-.p4 {
+.example4 {
   grid-column: 1 / 12;
   grid-row: 35 / 45;
 }
 
-.emptyRow {
-  grid-column: 1 / 13;
-  grid-row: 45 / 46;
+@include screen-xl {
+  .examples {
+    .text {
+      margin-left: calc(2 * (100vw / 12));
+
+      p {
+        font-size: 24px;
+        margin-bottom: 1em;
+      }
+
+      .icon {
+        width: 1em;
+        height: 1em;
+      }
+    }
+  }
+
+  .example1,
+  .example2,
+  .example3,
+  .example4 {
+    grid-column: 1 / 11;
+  }
 }

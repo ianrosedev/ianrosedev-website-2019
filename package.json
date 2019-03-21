@@ -27,6 +27,10 @@
     ]
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.16",
+    "@fortawesome/free-brands-svg-icons": "^5.8.0",
+    "@fortawesome/free-solid-svg-icons": "^5.8.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "gatsby": "^2.0.119",
     "gatsby-image": "^2.0.29",
     "gatsby-plugin-manifest": "^2.0.17",
