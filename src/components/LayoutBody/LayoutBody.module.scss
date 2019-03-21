@@ -1,3 +1,5 @@
+@import '../../styles/_sizes.scss';
+
 .layout {
   /* Grid - 12x24 - flexes to fit screen */
   /* If you go over 24 rows it will add more as needed */
@@ -7,7 +9,7 @@
   grid-gap: 0px;
 }
 
-@media screen and (min-width: 1300px) {
+@include screen-xl {
   .layout {
     grid-auto-rows: calc((100vh - 100px) / 24);
   }

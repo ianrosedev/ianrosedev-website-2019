@@ -48,7 +48,6 @@ const Code = () => {
 
   return (
     <LayoutBody>
-      <div className={styles.backgroundBlockLeft} aria-hidden='true' />
       <div className={styles.backgroundBlockRight} aria-hidden='true' />
       <div className={`${styles.projects} ${styles.p1}`}>
         <div className={styles.text}>

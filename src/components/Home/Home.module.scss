@@ -1,4 +1,5 @@
 @import '../../styles/_colors.scss';
+@import '../../styles/_sizes.scss';
 
 .backgroundBlockLeft {
   grid-column: 1 / 4;
@@ -99,7 +100,7 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
+@include screen-xl {
   .intro {
     h1 {
       font-size: 42px;
