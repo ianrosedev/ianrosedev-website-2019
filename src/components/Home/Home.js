@@ -16,7 +16,7 @@ const Home = () => (
       </p>
     </section>
     <section className={styles.skills}>
-      <h1>Skills:</h1>
+      <h2>Skills:</h2>
       <ul>
         <li>JavaScript - Modern Practices</li>
         <li>HTML - Accessibility</li>

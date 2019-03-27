@@ -1,7 +1,17 @@
-$xl: 1300px;
+@mixin screen-m {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screen-l {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
 
 @mixin screen-xl {
-  @media (min-width: #{$xl}) {
+  @media (min-width: 1200px) and (min-height: 1100px) {
     @content;
   }
 }
