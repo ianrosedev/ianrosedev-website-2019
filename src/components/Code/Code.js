@@ -9,6 +9,7 @@ import Footer from '../Footer/Footer';
 import styles from './Code.module.scss';
 
 const Code = () => {
+  // Images
   const data = useStaticQuery(graphql`
     query {
       snes: file(relativePath: { eq: "super-nintendo-game-info.jpg" }) {
@@ -68,7 +69,7 @@ const Code = () => {
 
   return (
     <LayoutBody>
-      {/* Layout */}
+      {/* Background */}
       <div className={styles.backgroundBlockRight} aria-hidden='true' />
       <div className={styles.backgroundBlockLeft} aria-hidden='true' />
       {/* Examples */}
@@ -171,11 +172,16 @@ const Code = () => {
               size='4x'
             />
           </a>
-          <FontAwesomeIcon
-            className={`${styles.icon} ${styles.iconDisabled}`}
-            icon={faLaptop}
-            size='4x'
-          />
+          <a
+            href='https://colortest.ianrosedev.com'
+            aria-label='Go to the Color Test website'
+          >
+            <FontAwesomeIcon
+              className={styles.icon}
+              icon={faLaptop}
+              size='4x'
+            />
+          </a>
         </div>
         <div style={{ width: exampleHeight }} className={styles.img}>
           <Img
@@ -205,11 +211,6 @@ const Code = () => {
               size='4x'
             />
           </a>
-          <FontAwesomeIcon
-            className={`${styles.icon} ${styles.iconDisabled}`}
-            icon={faLaptop}
-            size='4x'
-          />
         </div>
         <div style={{ width: exampleHeight }} className={styles.img}>
           <Img
