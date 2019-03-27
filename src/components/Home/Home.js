@@ -1,5 +1,6 @@
 import React from 'react';
 import LayoutBody from '../LayoutBody/LayoutBody';
+import Footer from '../Footer/Footer';
 import styles from './Home.module.scss';
 
 const Home = () => (
@@ -27,6 +28,7 @@ const Home = () => (
         <li>MongoDB</li>
       </ul>
     </section>
+    <Footer />
   </LayoutBody>
 );
 

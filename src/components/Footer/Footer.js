@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 
-const Footer = () => (
-  <footer className={styles.footer}>
-    <span className={styles.notice}>&copy; Ian Rose, 2019</span>
+const Footer = ({ position, color }) => (
+  <footer
+    className={position === 'right' ? styles.footerRight : styles.footerLeft}
+  >
+    <span className={styles.notice} style={{ color: color || 'white' }}>
+      &copy; Ian Rose, {new Date().getFullYear()}
+    </span>
   </footer>
 );
 

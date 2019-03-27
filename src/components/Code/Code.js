@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faLaptop } from '@fortawesome/free-solid-svg-icons';
 import LayoutBody from '../LayoutBody/LayoutBody';
+import Footer from '../Footer/Footer';
 import styles from './Code.module.scss';
 
 const Code = () => {
@@ -218,6 +219,7 @@ const Code = () => {
         </div>
       </article>
       <div className={styles.emptyRow} aria-hidden='true' />
+      <Footer position='right' color='black' />
     </LayoutBody>
   );
 };
