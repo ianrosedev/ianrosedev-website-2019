@@ -1,26 +1,14 @@
 @import '../../styles/_sizes.scss';
 
-.footerLeft {
-  grid-column: 1 / 2;
-  grid-row: 18 / auto;
-}
-
-.footerRight {
-  grid-column: 12/ 13;
-  grid-row: 18 / auto;
-  justify-self: center;
-}
-
-.notice {
+.footer {
+  white-space: nowrap;
   // Depreciated style fallback for older browsers
   writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  white-space: nowrap;
-  margin: 0 10px;
 }
 
 @include screen-xl {
-  .notice {
+  .footer {
     font-size: 20px;
   }
 }

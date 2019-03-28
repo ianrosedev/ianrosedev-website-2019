@@ -28,7 +28,7 @@ const Home = () => (
         <li>MongoDB</li>
       </ul>
     </section>
-    <Footer />
+    <Footer positionClass={styles.footer} />
   </LayoutBody>
 );
 

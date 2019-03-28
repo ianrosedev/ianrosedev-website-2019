@@ -5,12 +5,14 @@
   grid-column: 1 / 4;
   grid-row: 1 / 25;
   background-color: black;
+  z-index: -9999;
 }
 
 .backgroundBlockRight {
   grid-column: 10 / 13;
   grid-row: 1 / 25;
   background-color: $backgroundGrayLight;
+  z-index: -9999;
 }
 
 .photo {
@@ -98,6 +100,14 @@
       transform: translateX(0);
     }
   }
+}
+
+.footer {
+  grid-column: 1 / 2;
+  grid-row: 19 / auto;
+  justify-self: baseline;
+  margin-left: 20px;
+  color: white;
 }
 
 @include screen-xl {

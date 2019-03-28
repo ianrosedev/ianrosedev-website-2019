@@ -77,6 +77,13 @@
   grid-row: 35 / 45;
 }
 
+.footer {
+  grid-column: 12 / 13;
+  grid-row: 40 / auto;
+  margin-right: 35px;
+  color: black;
+}
+
 @include screen-xl {
   .examples {
     .text {

@@ -219,8 +219,8 @@ const Code = () => {
           />
         </div>
       </article>
+      <Footer positionClass={styles.footer} />
       <div className={styles.emptyRow} aria-hidden='true' />
-      <Footer position='right' color='black' />
     </LayoutBody>
   );
 };
