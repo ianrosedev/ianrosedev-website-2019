@@ -1,13 +1,13 @@
 import React from 'react';
 import LayoutMain from '../components/LayoutMain/LayoutMain';
-import Home from '../components/Home/Home';
+import Code from '../components/Code/Code';
 import SEO from '../components/SEO/SEO';
 
-const IndexPage = () => (
+const CodePage = () => (
   <LayoutMain>
-    <SEO title='Web Developer' />
-    <Home />
+    <SEO title='Code' />
+    <Code />
   </LayoutMain>
 );
 
-export default IndexPage;
+export default CodePage;

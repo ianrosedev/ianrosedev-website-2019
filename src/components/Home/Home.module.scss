@@ -1,15 +1,18 @@
 @import '../../styles/_colors.scss';
+@import '../../styles/_sizes.scss';
 
 .backgroundBlockLeft {
   grid-column: 1 / 4;
   grid-row: 1 / 25;
   background-color: black;
+  z-index: -9999;
 }
 
 .backgroundBlockRight {
   grid-column: 10 / 13;
   grid-row: 1 / 25;
   background-color: $backgroundGrayLight;
+  z-index: -9999;
 }
 
 .photo {
@@ -50,7 +53,7 @@
     font-size: 32px;
   }
 
-  h2 {
+  p {
     font-size: 24px;
     font-weight: 100;
   }
@@ -99,23 +102,23 @@
   }
 }
 
-@media screen and (min-width: 1300px) {
-  .intro {
-    h1 {
-      font-size: 42px;
-    }
+.footer {
+  grid-column: 1 / 2;
+  grid-row: 19 / auto;
+  justify-self: baseline;
+  margin-left: 20px;
+  color: white;
+}
 
-    h2 {
-      font-size: 32px;
-      font-weight: 100;
-    }
-  }
-
+@include screen-xl {
+  .intro,
   .skills {
-    h1 {
+    h1,
+    h2 {
       font-size: 42px;
     }
 
+    p,
     ul {
       font-size: 32px;
       font-weight: 100;

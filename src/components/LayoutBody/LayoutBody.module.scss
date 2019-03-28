@@ -1,9 +1,16 @@
+@import '../../styles/_sizes.scss';
+
 .layout {
-  /* Grid - 12x24 */
+  /* Grid - 12x24 - flexes to fit screen */
+  /* If you go over 24 rows it will add more as needed */
   display: grid;
-  grid-auto-columns: calc(100vw / 12);
+  grid-template-columns: repeat(12, calc(100vw / 12));
   grid-auto-rows: calc((100vh - 80px) / 24);
-  grid-gap: 0;
-  /* Remove scroll bar during animation */
-  overflow: hidden;
+  grid-gap: 0px;
+}
+
+@include screen-xl {
+  .layout {
+    grid-auto-rows: calc((100vh - 100px) / 24);
+  }
 }

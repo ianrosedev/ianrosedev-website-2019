@@ -1,12 +1,8 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
 import styles from './LayoutBody.module.scss';
 
 const LayoutBody = ({ children }) => (
-  <div className={styles.layout}>
-    {children}
-    <Footer />
-  </div>
+  <main className={styles.layout}>{children}</main>
 );
 
 export default LayoutBody;
