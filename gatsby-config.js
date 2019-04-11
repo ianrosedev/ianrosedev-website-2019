@@ -1,3 +1,9 @@
+// Access env vars
+// eslint-disable-next-line
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: 'Ian Rose',
@@ -9,6 +15,13 @@ module.exports = {
     'gatsby-plugin-eslint',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
