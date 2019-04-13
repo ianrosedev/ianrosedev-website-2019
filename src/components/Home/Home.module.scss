@@ -19,7 +19,7 @@
   grid-column: 2 / 6;
   grid-row: 2 / 22;
   animation: photo 2s linear;
-  background-image: url('../../images/ian-on-bench-cropped.jpg');
+  background-image: url('../../images/ian-on-bench.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -82,7 +82,7 @@
   border-bottom-color: $primaryColor;
   animation: skills 2.5s linear;
 
-  h1 {
+  h2 {
     font-size: 32px;
   }
 
