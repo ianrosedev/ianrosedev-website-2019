@@ -1,0 +1,14 @@
+@import '../../styles/_sizes.scss';
+
+.layout {
+  /* Grid - flexes to fit screen */
+  /* Matches 12 column borders */
+  margin: calc((100vh - 80px) / 24) calc(100vw / 12);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: calc((100vh - 80px) / 24);
+}
+
+@include screen-xl {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}

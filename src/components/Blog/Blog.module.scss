@@ -1,0 +1,11 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_sizes.scss';
+
+.card {
+  height: calc(10 * (100vh - 80px) / 24);
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+  background-color: lightgray;
+}
