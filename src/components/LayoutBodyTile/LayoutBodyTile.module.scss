@@ -1,14 +1,18 @@
+@import '../../styles/colors.scss';
 @import '../../styles/_sizes.scss';
 
 .layout {
   /* Grid - flexes to fit screen */
   /* Matches 12 column borders */
-  margin: calc((100vh - 80px) / 24) calc(100vw / 12);
+  padding: calc((100vh - 80px) / 24) calc(100vw / 12);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: calc((100vh - 80px) / 24);
+  background-color: black;
 }
 
 @include screen-xl {
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  .layout {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
 }
