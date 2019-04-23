@@ -38,8 +38,8 @@
 .intro {
   grid-column: 7 / 13;
   grid-row: 2 / auto;
-  /* 2/19 - `fit-content` only works in Chrome */
-  /* Be sure to have fallback and test on other browsers */
+  // 2/19 - `fit-content` only works in Chrome
+  // Be sure to have fallback and test on other browsers
   height: 160px;
   height: fit-content;
   background-color: white;
@@ -71,8 +71,8 @@
 .skills {
   grid-column: 8 / 13;
   grid-row: 11 / auto;
-  /* 2/19 - `fit-content` only works in Chrome */
-  /* Be sure to have fallback and test on other browsers */
+  // 2/19 - `fit-content` only works in Chrome
+  // Be sure to have fallback and test on other browsers
   height: 300px;
   height: fit-content;
   background-color: white;

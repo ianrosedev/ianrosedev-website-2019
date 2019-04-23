@@ -79,14 +79,6 @@ const Code = () => {
       >
         <div className={styles.text}>
           <h1 id='snes'>Super Nintendo Game Info</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
           <a
             href='https://github.com/ianrosedev/Super-Nintendo-Game-Info'
             aria-label='Go to the Super Nintendo Game Info GitHub page'
@@ -107,6 +99,14 @@ const Code = () => {
               size='4x'
             />
           </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
         </div>
         <div style={{ width: exampleHeight }} className={styles.img}>
           <Img
@@ -118,14 +118,6 @@ const Code = () => {
       <article className={`${styles.examples} ${styles.example2}`}>
         <div className={styles.text}>
           <h1>PupHub</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
           <a
             href='https://github.com/ianrosedev/PupHub'
             aria-label='Go to the PupHub GitHub page'
@@ -146,14 +138,6 @@ const Code = () => {
               size='4x'
             />
           </a>
-        </div>
-        <div style={{ width: exampleHeight }} className={styles.img}>
-          <Img fluid={data.pupHub.childImageSharp.fluid} alt='PupHub' />
-        </div>
-      </article>
-      <article className={`${styles.examples} ${styles.example3}`}>
-        <div className={styles.text}>
-          <h1>Color Test</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -162,6 +146,14 @@ const Code = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
+        </div>
+        <div style={{ width: exampleHeight }} className={styles.img}>
+          <Img fluid={data.pupHub.childImageSharp.fluid} alt='PupHub' />
+        </div>
+      </article>
+      <article className={`${styles.examples} ${styles.example3}`}>
+        <div className={styles.text}>
+          <h1>Color Test</h1>
           <a
             href='https://github.com/ianrosedev/recipe-share-color-test'
             aria-label='Go to the Color Test GitHub page'
@@ -182,6 +174,14 @@ const Code = () => {
               size='4x'
             />
           </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
         </div>
         <div style={{ width: exampleHeight }} className={styles.img}>
           <Img
@@ -193,14 +193,6 @@ const Code = () => {
       <article className={`${styles.examples} ${styles.example4}`}>
         <div className={styles.text}>
           <h1>Recipe Share [WIP]</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
           <a
             href='https://github.com/ianrosedev/recipe-share'
             aria-label='Go to the Recipe Share GitHub page'
@@ -211,6 +203,14 @@ const Code = () => {
               size='4x'
             />
           </a>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur.
+          </p>
         </div>
         <div style={{ width: exampleHeight }} className={styles.img}>
           <Img

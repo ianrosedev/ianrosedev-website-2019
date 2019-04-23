@@ -1,4 +1,4 @@
-/* Grid - 12x46 */
+// Grid - 12x46
 @import '../../styles/_colors.scss';
 @import '../../styles/_sizes.scss';
 
@@ -22,7 +22,7 @@
 
 .emptyRow {
   grid-column: 1 / 13;
-  grid-row: 45 / 46;
+  grid-row: 53 / 54;
 }
 
 .examples {
@@ -38,6 +38,10 @@
   .text {
     margin-left: calc(100vw / 12);
     max-width: 600px;
+
+    h1 {
+      margin-bottom: 0.3em;
+    }
 
     p {
       margin-bottom: 0.5em;
@@ -59,27 +63,27 @@
 
 .example1 {
   grid-column: 1 / 12;
-  grid-row: 2 / 12;
+  grid-row: 2 / 14;
 }
 
 .example2 {
   grid-column: 1 / 12;
-  grid-row: 13 / 23;
+  grid-row: 15 / 27;
 }
 
 .example3 {
   grid-column: 1 / 12;
-  grid-row: 24 / 34;
+  grid-row: 28 / 40;
 }
 
 .example4 {
   grid-column: 1 / 12;
-  grid-row: 35 / 45;
+  grid-row: 41 / 53;
 }
 
 .footer {
   grid-column: 12 / 13;
-  grid-row: 40 / auto;
+  grid-row: 48 / auto;
   margin-right: 35px;
   color: black;
 }
@@ -88,6 +92,10 @@
   .examples {
     .text {
       margin-left: calc(2 * (100vw / 12));
+
+      h1 {
+        margin-bottom: 0.7em;
+      }
 
       p {
         font-size: 24px;
