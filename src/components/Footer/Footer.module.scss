@@ -1,10 +1,22 @@
 @import '../../styles/_sizes.scss';
 
 .footer {
+  position: absolute;
+  bottom: 20px;
   white-space: nowrap;
   // Depreciated style fallback for older browsers
   writing-mode: tb-rl;
   writing-mode: vertical-rl;
+}
+
+.positionLeft {
+  left: 20px;
+  color: white;
+}
+
+.positionRight {
+  right: 20px;
+  color: black;
 }
 
 @include screen-xl {
