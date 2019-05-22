@@ -1,12 +1,10 @@
 import React from 'react';
-import LayoutBody from '../LayoutBody/LayoutBody';
+import LayoutBody from '../../layout/LayoutBody/LayoutBody';
 import Footer from '../Footer/Footer';
 import styles from './Home.module.scss';
 
 const Home = () => (
   <LayoutBody>
-    <div className={styles.backgroundBlockLeft} aria-hidden='true' />
-    <div className={styles.backgroundBlockRight} aria-hidden='true' />
     <div className={styles.photo} role='img' aria-label='Ian on bench' />
     <section className={styles.intro}>
       <h1>Hi, My name is Ian.</h1>
@@ -29,6 +27,7 @@ const Home = () => (
       </ul>
     </section>
     <Footer positionClass={styles.footer} />
+    <div className={styles.emptyRow} aria-hidden='true' />
   </LayoutBody>
 );
 

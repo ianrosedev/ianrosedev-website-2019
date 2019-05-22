@@ -2,6 +2,7 @@
 // Matches 12 column borders
 @import '../../styles/colors.scss';
 @import '../../styles/_sizes.scss';
+@import '../../styles/_background.scss';
 
 .layout {
   display: grid;
@@ -9,12 +10,7 @@
   grid-gap: calc((100vh - #{$headerSize}) / 24);
   // Mimic 12 column borders
   padding: calc((100vh - #{$headerSize}) / 24) calc(100vw / 12);
-  background: repeating-linear-gradient(
-    160deg,
-    white 0 50px,
-    $backgroundGrayLight 50px 300px,
-    $backgroundGrayDark 300px 800px
-  );
+  background: $background;
 }
 
 @include screen-xl {

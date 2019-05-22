@@ -2,29 +2,6 @@
 @import '../../styles/_colors.scss';
 @import '../../styles/_sizes.scss';
 
-.backgroundBlockLeft {
-  grid-column: 1 / 6;
-  grid-row: 1 / 46;
-  transform: rotate(-45deg);
-  z-index: -9999;
-  margin-left: -900px;
-  background-color: black;
-}
-
-.backgroundBlockRight {
-  grid-column: 3 / 11;
-  grid-row: 1 / 46;
-  transform: rotate(-45deg);
-  z-index: -9999;
-  padding: 0 600px;
-  background-color: $backgroundGrayLight;
-}
-
-.emptyRow {
-  grid-column: 1 / 13;
-  grid-row: 53 / 54;
-}
-
 .examples {
   border-style: solid;
   border-width: 10px 0;
@@ -86,6 +63,11 @@
   grid-row: 48 / auto;
   margin-right: 35px;
   color: black;
+}
+
+.emptyRow {
+  grid-column: 1 / 13;
+  grid-row: 53 / 54;
 }
 
 @include screen-xl {

@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faLaptop } from '@fortawesome/free-solid-svg-icons';
-import LayoutBody from '../LayoutBody/LayoutBody';
+import LayoutBody from '../../layout/LayoutBody/LayoutBody';
 import Footer from '../Footer/Footer';
 import styles from './Code.module.scss';
 
@@ -69,10 +69,6 @@ const Code = () => {
 
   return (
     <LayoutBody>
-      {/* Background */}
-      <div className={styles.backgroundBlockRight} aria-hidden='true' />
-      <div className={styles.backgroundBlockLeft} aria-hidden='true' />
-      {/* Examples */}
       <article
         aria-labelledby='snes'
         className={`${styles.examples} ${styles.example1}`}

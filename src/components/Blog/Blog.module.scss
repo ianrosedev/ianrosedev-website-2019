@@ -2,7 +2,7 @@
 @import '../../styles/_sizes.scss';
 
 .card {
-  height: calc(13 * (100vh - #{$headerSize}) / 24);
+  height: calc(11 * (100vh - #{$headerSize}) / 24);
   border-style: solid;
   border-width: 10px 0;
   border-top-color: black;
@@ -31,7 +31,7 @@
 
 @include screen-xl {
   .card {
-    height: calc(14 * (100vh - #{$headerSize}) / 24);
+    height: calc(12 * (100vh - #{$headerSize}) / 24);
 
     .text {
       h2 {
