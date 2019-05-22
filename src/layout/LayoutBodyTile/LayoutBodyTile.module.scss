@@ -1,0 +1,20 @@
+// Grid - flexes to fit screen
+// Matches 12 column borders
+@import '../../styles/colors.scss';
+@import '../../styles/_sizes.scss';
+@import '../../styles/_background.scss';
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: calc((100vh - #{$headerSize}) / 24);
+  // Mimic 12 column borders
+  padding: calc((100vh - #{$headerSize}) / 24) calc(100vw / 12);
+  background: $background;
+}
+
+@include screen-xl {
+  .layout {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+}

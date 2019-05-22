@@ -1,3 +1,9 @@
+// Header size for use in calculations
+// Must interpolate in `calc` e.g. #{$headerSize}
+$headerSize: 80px;
+
+// Media queries
+// Mobile first
 @mixin screen-m {
   @media (min-width: 768px) {
     @content;
@@ -11,7 +17,7 @@
 }
 
 @mixin screen-xl {
-  @media (min-width: 1200px) and (min-height: 1100px) {
+  @media (min-width: 1200px) and (min-height: 900px) {
     @content;
   }
 }

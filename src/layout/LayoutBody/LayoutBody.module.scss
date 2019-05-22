@@ -1,0 +1,19 @@
+// Grid - 12x24 - flexes to fit screen
+// If you go over 24 rows it will add more as needed
+@import '../../styles/_sizes.scss';
+@import '../../styles/_colors.scss';
+@import '../../styles/_background.scss';
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(12, calc(100vw / 12));
+  grid-auto-rows: calc((100vh - #{$headerSize}) / 24);
+  grid-gap: 0px;
+  background: $background;
+}
+
+@include screen-xl {
+  .layout {
+    grid-auto-rows: calc((100vh - 100px) / 24);
+  }
+}

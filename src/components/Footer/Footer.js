@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 
-// Use positionClass to position on grid
-const Footer = ({ positionClass }) => (
-  <footer className={`${styles.footer} ${positionClass}`}>
+const Footer = ({ position }) => (
+  <footer
+    className={`${styles.footer} ${
+      position === 'right' ? styles.positionRight : styles.positionLeft
+    }`}
+  >
     &copy; Ian Rose, {new Date().getFullYear()}
   </footer>
 );

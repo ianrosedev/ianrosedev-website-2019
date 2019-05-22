@@ -6,7 +6,7 @@
 }
 
 .header {
-  height: 80px;
+  height: $headerSize;
   display: grid;
   grid-template-columns: repeat(12, calc(100vw / 12));
   grid-gap: 0;
@@ -20,7 +20,9 @@
   }
 
   .nav {
-    font-size: 24px;
+    font-size: 26px;
+    // Vertically center
+    line-height: 24px;
     font-weight: bold;
     grid-column: 8 / 13;
     grid-row: 1 / 2;
@@ -51,11 +53,13 @@
     height: 100px;
 
     .logo {
-      height: 80px;
+      height: $headerSize;
     }
 
     .nav {
-      font-size: 32px;
+      font-size: 34px;
+      // Vertically center
+      line-height: 32px;
 
       a {
         border-width: 0 0 0 4px;

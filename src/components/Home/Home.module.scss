@@ -1,20 +1,6 @@
 @import '../../styles/_colors.scss';
 @import '../../styles/_sizes.scss';
 
-.backgroundBlockLeft {
-  grid-column: 1 / 4;
-  grid-row: 1 / 25;
-  background-color: black;
-  z-index: -9999;
-}
-
-.backgroundBlockRight {
-  grid-column: 10 / 13;
-  grid-row: 1 / 25;
-  background-color: $backgroundGrayLight;
-  z-index: -9999;
-}
-
 .photo {
   grid-column: 2 / 6;
   grid-row: 2 / 22;
@@ -23,7 +9,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  filter: grayscale(100%);
+  // filter: grayscale(100%);
 
   @keyframes photo {
     from {
@@ -38,8 +24,8 @@
 .intro {
   grid-column: 7 / 13;
   grid-row: 2 / auto;
-  /* 2/19 - `fit-content` only works in Chrome */
-  /* Be sure to have fallback and test on other browsers */
+  // 2/19 - `fit-content` only works in Chrome
+  // Be sure to have fallback and test on other browsers
   height: 160px;
   height: fit-content;
   background-color: white;
@@ -71,8 +57,8 @@
 .skills {
   grid-column: 8 / 13;
   grid-row: 11 / auto;
-  /* 2/19 - `fit-content` only works in Chrome */
-  /* Be sure to have fallback and test on other browsers */
+  // 2/19 - `fit-content` only works in Chrome
+  // Be sure to have fallback and test on other browsers
   height: 300px;
   height: fit-content;
   background-color: white;
@@ -102,12 +88,9 @@
   }
 }
 
-.footer {
-  grid-column: 1 / 2;
-  grid-row: 19 / auto;
-  justify-self: baseline;
-  margin-left: 20px;
-  color: white;
+.emptyRow {
+  grid-column: 1 / 13;
+  grid-row: 22/ 25;
 }
 
 @include screen-xl {
