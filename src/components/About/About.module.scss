@@ -1,0 +1,49 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_sizes.scss';
+
+.image {
+  grid-column: 9 / 12;
+  grid-row: 2 / 27;
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+}
+
+.article {
+  grid-column: 2 / 9;
+  grid-row: 2 / 27;
+  background-color: white;
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+  padding: 0 calc(100vw / 12);
+  text-align: justify;
+  &::first-letter {
+    font-size: 3rem;
+  }
+}
+
+.emptyRow {
+  grid-column: 1 / 13;
+  grid-row: 27 / 28;
+}
+
+@include screen-xl {
+  .image {
+    grid-row: 2 / 18;
+  }
+
+  .article {
+    grid-row: 2 / 18;
+
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .emptyRow {
+    grid-row: 19 / 25;
+  }
+}
