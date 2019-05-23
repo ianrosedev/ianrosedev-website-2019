@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import LayoutBody from '../../layout/LayoutBody/LayoutBody';
+import LayoutBody from '../../layouts/LayoutBody/LayoutBody';
 import Footer from '../Footer/Footer';
 import styles from './About.module.scss';
 
@@ -11,7 +11,7 @@ const About = () => {
     query {
       headshot: file(relativePath: { eq: "ian-headshot.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600, quality: 100) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
@@ -22,12 +22,12 @@ const About = () => {
   return (
     <>
       <LayoutBody>
-        <Img
-          fluid={data.headshot.childImageSharp.fluid}
-          alt='Ian headshot'
-          className={styles.image}
-        />
         <article className={styles.article}>
+          <Img
+            fluid={data.headshot.childImageSharp.fluid}
+            alt='Ian headshot'
+            className={styles.img}
+          />
           <p>
             I live in Durham, North Carolina with my awesome wife and
             mischievous dog. When I’m not coding or hanging out with the family,

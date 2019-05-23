@@ -1,5 +1,5 @@
-@import '../../styles/_colors.scss';
-@import '../../styles/_sizes.scss';
+@import '../../styles/colors';
+@import '../../styles/sizes';
 
 .card {
   height: calc(11 * (100vh - #{$headerSize}) / 24);
@@ -14,6 +14,7 @@
   .img {
     width: 100%;
     height: 60%;
+    background-color: $utilityGray;
   }
 
   .text {

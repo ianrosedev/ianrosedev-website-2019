@@ -1,5 +1,5 @@
 import React from 'react';
-import LayoutBody from '../../layout/LayoutBody/LayoutBody';
+import LayoutBody from '../../layouts/LayoutBody/LayoutBody';
 import Footer from '../Footer/Footer';
 import styles from './Home.module.scss';
 

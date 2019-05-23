@@ -1,6 +1,7 @@
-@import '../../styles/_fonts.scss';
+@import '../../styles/fonts';
 
 .layout {
   font-family: $fontStack;
   overflow: hidden;
+  min-height: 100vh;
 }

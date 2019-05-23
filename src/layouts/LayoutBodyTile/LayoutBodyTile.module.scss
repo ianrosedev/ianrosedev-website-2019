@@ -1,8 +1,6 @@
-// Grid - flexes to fit screen
-// Matches 12 column borders
-@import '../../styles/colors.scss';
-@import '../../styles/_sizes.scss';
-@import '../../styles/_background.scss';
+@import '../../styles/colors';
+@import '../../styles/sizes';
+@import '../../styles/background';
 
 .layout {
   display: grid;
