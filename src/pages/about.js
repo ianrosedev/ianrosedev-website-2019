@@ -1,13 +1,13 @@
 import React from 'react';
 import LayoutMain from '../layouts/LayoutMain/LayoutMain';
-import Blog from '../components/Blog/Blog';
+import About from '../components/About/About';
 import SEO from '../components/SEO/SEO';
 
-const BlogPage = () => (
+const AboutPage = () => (
   <LayoutMain>
-    <SEO title='Blog' />
-    <Blog />
+    <SEO title='About' />
+    <About />
   </LayoutMain>
 );
 
-export default BlogPage;
+export default AboutPage;

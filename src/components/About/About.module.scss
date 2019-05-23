@@ -1,0 +1,41 @@
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.article {
+  grid-column: 2 / 12;
+  grid-row: 2 / 3;
+  background-color: white;
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+  padding-left: calc(100vw / 12);
+  text-align: justify;
+  &::first-letter {
+    font-size: 3rem;
+  }
+
+  .img {
+    float: right;
+    width: calc(100vw / 12 * 3);
+    height: 100%;
+    background-color: $utilityGray;
+  }
+
+  p {
+    margin-right: calc(100vw / 12 * 4);
+  }
+}
+
+.emptyRow {
+  grid-column: 1 / 13;
+  grid-row: 3 / 4;
+}
+
+@include screen-xl {
+  .article {
+    p {
+      font-size: 24px;
+    }
+  }
+}

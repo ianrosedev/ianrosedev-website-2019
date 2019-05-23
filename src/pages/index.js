@@ -1,5 +1,5 @@
 import React from 'react';
-import LayoutMain from '../components/LayoutMain/LayoutMain';
+import LayoutMain from '../layouts/LayoutMain/LayoutMain';
 import Home from '../components/Home/Home';
 import SEO from '../components/SEO/SEO';
 

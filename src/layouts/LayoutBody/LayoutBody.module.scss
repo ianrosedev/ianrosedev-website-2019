@@ -1,0 +1,18 @@
+@import '../../styles/sizes';
+@import '../../styles/colors';
+@import '../../styles/background';
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(12, calc(100vw / 12));
+  grid-auto-rows: fit-content(calc((100vh - #{$headerSize}) / 24));
+  grid-gap: calc((100vh - #{$headerSize}) / 24) 0;
+  min-height: calc((100vh - #{$headerSize}));
+  background: $background;
+}
+
+// @include screen-xl {
+//   .layout {
+//     grid-auto-rows: calc((100vh - 100px) / 24);
+//   }
+// }

@@ -1,15 +1,14 @@
-@import '../../styles/_colors.scss';
-@import '../../styles/_sizes.scss';
+@import '../../styles/colors';
+@import '../../styles/sizes';
 
 .photo {
   grid-column: 2 / 6;
-  grid-row: 2 / 22;
+  grid-row: 2 / 4;
   animation: photo 2s linear;
   background-image: url('../../images/ian-on-bench-cropped.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  // filter: grayscale(100%);
 
   @keyframes photo {
     from {
@@ -23,11 +22,7 @@
 
 .intro {
   grid-column: 7 / 13;
-  grid-row: 2 / auto;
-  // 2/19 - `fit-content` only works in Chrome
-  // Be sure to have fallback and test on other browsers
-  height: 160px;
-  height: fit-content;
+  grid-row: 2 / 3;
   background-color: white;
   border-style: solid;
   border-width: 10px 0;
@@ -56,11 +51,7 @@
 
 .skills {
   grid-column: 8 / 13;
-  grid-row: 11 / auto;
-  // 2/19 - `fit-content` only works in Chrome
-  // Be sure to have fallback and test on other browsers
-  height: 300px;
-  height: fit-content;
+  grid-row: 3 / 4;
   background-color: white;
   border-style: solid;
   border-width: 10px 0;
@@ -90,10 +81,22 @@
 
 .emptyRow {
   grid-column: 1 / 13;
-  grid-row: 22/ 25;
+  grid-row: 4 / 5;
 }
 
 @include screen-xl {
+  .photo {
+    grid-row: 2 / 7;
+  }
+
+  .skills {
+    grid-row: 6 / 7;
+  }
+
+  .emptyRow {
+    grid-row: 7 / 8;
+  }
+
   .intro,
   .skills {
     h1,

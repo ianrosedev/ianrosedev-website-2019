@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
-import LayoutBodyTile from '../../layout/LayoutBodyTile/LayoutBodyTile';
+import LayoutBodyTile from '../../layouts/LayoutBodyTile/LayoutBodyTile';
 import Footer from '../Footer/Footer';
 import styles from './Blog.module.scss';
 
