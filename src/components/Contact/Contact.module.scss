@@ -4,15 +4,14 @@
 .img {
   grid-column: 1 / 12;
   grid-row: 2 / 3;
-  background-color: $utilityGray;
   min-height: 200px;
 }
 
 .contact {
   grid-column: 8 / 13;
   grid-row: 3 / auto;
-  background-color: white;
   z-index: 1;
+  background-color: white;
   border-style: solid;
   border-width: 10px 0;
   border-top-color: black;
