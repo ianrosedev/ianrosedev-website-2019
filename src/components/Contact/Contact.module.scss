@@ -1,0 +1,50 @@
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.img {
+  grid-column: 1 / 12;
+  grid-row: 2 / 3;
+  min-height: 200px;
+}
+
+.contact {
+  grid-column: 8 / 13;
+  grid-row: 3 / auto;
+  z-index: 1;
+  background-color: white;
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+  animation: contact 2s linear;
+
+  li {
+    list-style: none;
+    padding: 0.5em 0;
+    font-size: 22px;
+
+    a {
+      color: black;
+    }
+
+    .icon {
+      width: 0.4em;
+      height: 0.4em;
+      margin-right: 0.1em;
+    }
+  }
+
+  @keyframes contact {
+    from {
+      transform: translateX(800px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+.emptyRow {
+  grid-column: 1 / 13;
+  grid-row: 3 / 4;
+}
