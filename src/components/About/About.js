@@ -22,12 +22,12 @@ const About = () => {
   return (
     <>
       <LayoutBody>
+        <Img
+          fluid={data.headshot.childImageSharp.fluid}
+          alt='Ian headshot'
+          className={styles.img}
+        />
         <article className={styles.article}>
-          <Img
-            fluid={data.headshot.childImageSharp.fluid}
-            alt='Ian headshot'
-            className={styles.img}
-          />
           <p>
             I live in Durham, North Carolina with my awesome wife and
             mischievous dog. When I’m not coding or hanging out with the family,
@@ -66,7 +66,7 @@ const About = () => {
         </article>
         <div className={styles.emptyRow} aria-hidden='true' />
       </LayoutBody>
-      <Footer position='left' />
+      <Footer position='right' />
     </>
   );
 };
