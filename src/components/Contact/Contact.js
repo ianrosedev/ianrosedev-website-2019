@@ -14,7 +14,7 @@ const Contact = () => {
     query {
       ianOnTriangle: file(relativePath: { eq: "ian-on-triangle-statue.jpg" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(maxWidth: 3000, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
