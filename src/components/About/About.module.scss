@@ -1,30 +1,29 @@
 @import '../../styles/colors';
 @import '../../styles/sizes';
 
+.img {
+  grid-column: 8 / 12;
+  grid-row: 2 / 3;
+  background-color: $utilityGray;
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+}
+
 .article {
-  grid-column: 2 / 12;
+  grid-column: 1 / 8;
   grid-row: 2 / 3;
   background-color: white;
   border-style: solid;
   border-width: 10px 0;
   border-top-color: black;
   border-bottom-color: $primaryColor;
-  padding-left: calc(100vw / 12);
+  padding: 20px calc(100vw / 12);
   text-align: justify;
-  &::first-letter {
-    font-size: 3rem;
-  }
-
-  .img {
-    float: right;
-    width: calc(100vw / 12 * 3);
-    height: 100%;
-    background-color: $utilityGray;
-  }
-
-  p {
-    margin-right: calc(100vw / 12 * 4);
-  }
+  // &::first-letter {
+  //   font-size: 3rem;
+  // }
 }
 
 .emptyRow {
