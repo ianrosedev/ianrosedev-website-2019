@@ -14,28 +14,28 @@ const Code = () => {
     query {
       snes: file(relativePath: { eq: "super-nintendo-game-info.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600, quality: 100) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       pupHub: file(relativePath: { eq: "puphub.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 600, quality: 100) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       colorTest: file(relativePath: { eq: "recipe-share-color-test.png" }) {
         childImageSharp {
-          fluid(maxWidth: 600, quality: 100) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
       }
       recipeShare: file(relativePath: { eq: "recipe-share-wip.png" }) {
         childImageSharp {
-          fluid(maxWidth: 600, quality: 100) {
+          fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }

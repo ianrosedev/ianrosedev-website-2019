@@ -17,7 +17,7 @@ const Blog = () => {
               description
             }
             heroImage {
-              fluid(maxWidth: 600, quality: 100) {
+              fluid(maxWidth: 1000, quality: 100) {
                 ...GatsbyContentfulFluid_noBase64
               }
             }
