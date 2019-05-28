@@ -8,8 +8,8 @@
   "scripts": {
     "format": "prettier --config .prettierrc --check --write \"src/**/*.{js, css, scss, md}\"",
     "lint": "eslint --fix --ignore-path .gitignore .",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "gatsby telemetry --disable && gatsby build",
+    "develop": "gatsby telemetry --disable && gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
