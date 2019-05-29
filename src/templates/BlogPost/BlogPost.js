@@ -37,7 +37,7 @@ const BlogPost = ({ data }) => {
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://cdn.commento.io/js/commento.js';
-    script.async = true;
+    script.defer = true;
     document.body.appendChild(script);
   }, []);
 

@@ -10,6 +10,11 @@
   border-top-color: black;
   border-bottom-color: $primaryColor;
   padding: 0 calc(100vw / 12) 20px;
+  // Code block
+  pre[class*='language-'] {
+    background: black;
+    border-radius: 0;
+  }
 
   .heroImage {
     height: 400px;
