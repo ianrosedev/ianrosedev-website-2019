@@ -1,2 +1,54 @@
-.foo {
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.post {
+  grid-column: 2 / 12;
+  grid-row: 2 / 3;
+  background-color: white;
+  border-style: solid;
+  border-width: 10px 0;
+  border-top-color: black;
+  border-bottom-color: $primaryColor;
+  padding: 0 calc(100vw / 12) 20px;
+
+  .heroImage {
+    height: 400px;
+    // Set negative margin to take full width of container
+    margin: 0 calc(100vw / -12);
+  }
+
+  .header {
+    border-style: solid;
+    border-width: 0 0 10px 0;
+    border-bottom-color: $primaryColor;
+    text-align: center;
+
+    h1 {
+      font-size: 48px;
+    }
+
+    .publishDate {
+      color: $backgroundGrayDark;
+    }
+  }
+
+  .content {
+    padding: 20px 0;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .tags {
+    border-style: solid;
+    border-width: 10px 0 0 0;
+    border-top-color: black;
+    margin-bottom: 20px;
+  }
+}
+
+.emptyRow {
+  grid-column: 1 / 13;
+  grid-row: 3 / 4;
 }
