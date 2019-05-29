@@ -1,6 +1,6 @@
 // Need dangerouslySetInnerHTML for blog body
 /* eslint-disable react/no-danger */
-import React from 'react';
+import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import LayoutMain from '../../layouts/LayoutMain/LayoutMain';
@@ -33,6 +33,14 @@ export const query = graphql`
 const BlogPost = ({ data }) => {
   const { contentfulBlogPost: post } = data;
 
+  // Use Commento for comments
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://cdn.commento.io/js/commento.js';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <LayoutMain>
       <LayoutBody>
@@ -54,12 +62,7 @@ const BlogPost = ({ data }) => {
               }}
             />
           </div>
-          <div className={styles.tags}>
-            <h4>Tags</h4>
-            {post.tags.map(tag => (
-              <span key={tag}>{tag} </span>
-            ))}
-          </div>
+          <div id='commento' className={styles.commento} />
         </div>
         <div className={styles.emptyRow} aria-hidden='true' />
       </LayoutBody>
