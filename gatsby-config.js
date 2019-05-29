@@ -12,6 +12,7 @@ module.exports = {
     author: '@gatsbyjs',
   },
   plugins: [
+    'gatsby-plugin-remove-trailing-slashes',
     'gatsby-plugin-eslint',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
