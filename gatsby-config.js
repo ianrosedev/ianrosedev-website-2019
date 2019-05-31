@@ -12,6 +12,7 @@ module.exports = {
     author: '@gatsbyjs',
   },
   plugins: [
+    'gatsby-plugin-remove-trailing-slashes',
     'gatsby-plugin-eslint',
     'gatsby-plugin-sass',
     'gatsby-plugin-react-helmet',
@@ -20,6 +21,16 @@ module.exports = {
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+          },
+        ],
       },
     },
     {
