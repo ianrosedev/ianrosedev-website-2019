@@ -1,24 +1,7 @@
 @import '../../styles/colors';
 @import '../../styles/sizes';
 
-.img {
-  grid-column: 2 / 6;
-  grid-row: 2 / 4;
-  animation: on-bench 2s linear;
-
-  @keyframes on-bench {
-    from {
-      transform: translateX(-1000px);
-    }
-    to {
-      transform: translateX(0%);
-    }
-  }
-}
-
 .intro {
-  grid-column: 7 / 13;
-  grid-row: 2 / 3;
   background-color: white;
   border-style: solid;
   border-width: 10px 0;
@@ -39,6 +22,7 @@
     from {
       transform: translateX(800px);
     }
+
     to {
       transform: translateX(0);
     }
@@ -46,8 +30,6 @@
 }
 
 .skills {
-  grid-column: 8 / 13;
-  grid-row: 3 / 4;
   background-color: white;
   border-style: solid;
   border-width: 10px 0;
@@ -69,9 +51,48 @@
     from {
       transform: translateX(800px);
     }
+
     to {
       transform: translateX(0);
     }
+  }
+}
+
+.intro,
+.skills {
+  padding: 2em;
+}
+
+@include screen-m {
+  .img {
+    grid-column: 2 / 6;
+    grid-row: 2 / 4;
+    animation: on-bench 2s linear;
+
+    @keyframes on-bench {
+      from {
+        transform: translateX(-1000px);
+      }
+
+      to {
+        transform: translateX(0%);
+      }
+    }
+  }
+
+  .intro {
+    grid-column: 7 / 13;
+    grid-row: 2 / 3;
+  }
+
+  .skills {
+    grid-column: 8 / 13;
+    grid-row: 3 / 4;
+  }
+
+  .intro,
+  .skills {
+    padding: 0;
   }
 }
 
@@ -95,6 +116,7 @@
 
   .intro,
   .skills {
+
     h1,
     h2 {
       font-size: 42px;

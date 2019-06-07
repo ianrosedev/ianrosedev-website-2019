@@ -2,34 +2,46 @@
 @import '../../styles/sizes';
 
 .img {
-  grid-column: 8 / 12;
-  grid-row: 2 / 3;
-  background-color: $utilityGray;
   border-style: solid;
   border-width: 10px 0;
   border-top-color: black;
   border-bottom-color: $primaryColor;
+  background-color: $utilityGray;
 }
 
 .article {
-  grid-column: 1 / 8;
-  grid-row: 2 / 3;
-  background-color: white;
   border-style: solid;
   border-width: 10px 0;
   border-top-color: black;
   border-bottom-color: $primaryColor;
-  padding: 20px calc(100vw / 12);
+  background-color: white;
   text-align: justify;
-  // &::first-letter {
-  //   font-size: 3rem;
-  // }
+  padding: 1.5em 1em;
+
+  p:first-of-type {
+    margin-top: 0;
+  }
 }
 
-.emptyRow {
-  grid-column: 1 / 13;
-  grid-row: 3 / 4;
+@include screen-m {
+  .img {
+    grid-column: 8 / 12;
+    grid-row: 2 / 3;
+  }
+
+  .article {
+    grid-column: 1 / 8;
+    grid-row: 2 / 3;
+    padding: 20px calc(100vw / 12);
+  }
+
+  .emptyRow {
+    grid-column: 1 / 13;
+    grid-row: 3 / 4;
+  }
 }
+
+@include screen-l {}
 
 @include screen-xl {
   .article {
